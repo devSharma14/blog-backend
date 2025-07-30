@@ -8,8 +8,10 @@ const app = express();
 
 // 🌐 CORS setup - allows requests from anywhere (for testing)
 // ⚠️ For production, replace '*' with your frontend domain
+
+
 app.use(cors({
-  origin: '*', // OR: 'https://your-frontend.vercel.app'
+  origin: 'https://memories-project-blog.vercel.app', // OR: 'https://your-frontend.vercel.app'
   credentials: true,
 }));
 
